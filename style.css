@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #e9ecef;
+    color: #222;
+    line-height: 1.6;
+}
+
+.resume {
+    width: 210mm;
+    min-height: 297mm;
+    margin: 30px auto;
+    padding: 35px 45px;
+    background: white;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Header */
+
+header {
+    text-align: center;
+    border-bottom: 2px solid #222;
+    padding-bottom: 18px;
+    margin-bottom: 22px;
+}
+
+header h1 {
+    font-size: 28px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+}
+
+header p {
+    font-size: 17px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    font-size: 13px;
+}
+
+/* Sections */
+
+section {
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 17px;
+    text-transform: uppercase;
+    border-bottom: 1px solid #444;
+    padding-bottom: 4px;
+    margin-bottom: 10px;
+    letter-spacing: 0.5px;
+}
+
+h3 {
+    font-size: 15px;
+    margin-bottom: 2px;
+}
+
+p {
+    font-size: 14px;
+}
+
+.item {
+    margin-bottom: 12px;
+}
+
+/* Lists */
+
+ul {
+    margin-left: 20px;
+}
+
+li {
+    font-size: 14px;
+    margin-bottom: 3px;
+}
+
+/* Signature */
+
+.signature {
+    margin-top: 25px;
+}
+
+/* Print settings */
+
+@media print {
+
+    body {
+        background: white;
+    }
+
+    .resume {
+        width: 100%;
+        min-height: auto;
+        margin: 0;
+        padding: 25px 35px;
+        box-shadow: none;
+    }
+
+    @page {
+        size: A4;
+        margin: 0;
+    }
+}
+
+/* Mobile */
+
+@media screen and (max-width: 800px) {
+
+    .resume {
+        width: 95%;
+        margin: 15px auto;
+        padding: 25px;
+    }
+
+    header h1 {
+        font-size: 22px;
+    }
+
+    .contact {
+        flex-direction: column;
+        gap: 3px;
+    }
+}
